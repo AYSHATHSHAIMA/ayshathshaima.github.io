@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayshath Shaima - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+
+        .projects {
+            display: grid;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            transition: opacity 0.2s ease;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👋 Hi, I'm Ayshath Shaima</h1>
+        <p class="subtitle">Full Stack Developer | React & Python Enthusiast</p>
+
+        <div class="projects">
+            <div class="project-card">
+                <h2>🐦 Tweet Comment Analyzer</h2>
+                <p>An intelligent web application that classifies and manages Twitter/X comments based on length criteria. Features modern UI with Cyberpunk theme, real-time filtering, and smart comment management.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Flask</span>
+                    <span class="tech-badge">Tailwind CSS</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">REST API</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <a href="https://tweettalk.onrender.com" class="btn" target="_blank">🚀 Live Demo</a>
+                    <a href="https://github.com/AYSHATHSHAIMA/TweetTalk" class="btn" target="_blank">📂 View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2>💼 Job Portal</h2>
+                <p>A comprehensive job portal application connecting employers with job seekers.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Python</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/AYSHATHSHAIMA/Job_Portal" class="btn" target="_blank">📂 View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2>🎯 More Projects</h2>
+                <p>Explore my other projects including Next.js applications, web development practices, and creative web designs.</p>
+                
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/AYSHATHSHAIMA?tab=repositories" class="btn" target="_blank">🔍 Browse All</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/AYSHATHSHAIMA" target="_blank">GitHub</a>
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+
+        <p style="text-align: center; margin-top: 40px; opacity: 0.7; font-size: 0.9rem;">
+            💡 Open to collaboration and new opportunities!
+        </p>
+    </div>
+</body>
+</html>
